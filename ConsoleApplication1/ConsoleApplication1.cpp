@@ -5,11 +5,13 @@
 
 int age = {};
 int adult = 20;
+std::string name;
 
 int main()
 {
-
-    std::cout << "How old are you?\n";
+    std::cout << "What is your name? ";
+    std::getline(std::cin, name);
+    std::cout << "OK "<<name<<", how old are you?\n";
     std::cin >> age;
     //std::cout << age;
     if (age >= adult)
